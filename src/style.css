@@ -82,17 +82,17 @@ body {
   position: absolute;
   right: 0px;
   top: 0px;
-  margin-right: -42px;
-  margin-top: -42px;
+  margin-right: -69px;
+  margin-top: -52px;
   animation: fadeIn 2.4s ease-in-out 1.2s forwards;
   opacity: 0;
 }
 
 .spinner__image {
-  width: 164px;
-  height: 164px;
+  width: 194px;
+  height: 194px;
   background-size: contain;
-  background-image: url("/images/wawa.svg");
+  background-image: url("/images/yugyeonglee-deguzman.svg");
   animation: rotate 10s linear infinite;
 }
 
