@@ -179,13 +179,11 @@ body {
 }
 
 .outro__link{
-  position: fixed;
-  top: 40px;
-  right: 20px;
-
-  padding: 1rem 2rem;
+  position: absolute;
+  right: 0vw;
+  top: 42px;
+  padding: 1rem 4rem;
   text-decoration: none;
-
   font-family:  "Inter", sans-serif;
   font-size: 1rem;
   color: white;  
@@ -217,6 +215,12 @@ body {
     top: 24px;
     transform: scale(0.5);
     transform-origin: center top;
+  }
+
+  .outro__link{
+    top: 20px;
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
   }
 
   .spinner__image {
