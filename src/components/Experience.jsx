@@ -47,35 +47,46 @@ export const Experience = () => {
 
       const textSections = useMemo(() => {
         return[
-        {
-          position: new Vector3(
-            curvePoints[1].x - 3,
-            curvePoints[2],
-            curvePoints[1].z
-          ),
-          subtitle: `Welcome to YG,
-          Have a seat and enjoy the ride!`
-        },
-        {
-          cameraRailDist: -1,
-          position: new Vector3(
-            curvePoints[3].x - 3,
-            curvePoints[3].y,
-            curvePoints[3].z
-          ),
-          title: "Fear of flying?",
-          subtitle: `Our flight attendants will help you have a great journey`,
-        },
-        {
-          cameraRailDist: 1.5,
-          position: new Vector3(
-            curvePoints[4].x + 3.5,
-            curvePoints[4].y,
-            curvePoints[4].z - 12
-          ),
-          title: "Movies",
-          subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
-        },
+          {
+            cameraRailDist: -1,
+            position: new Vector3(
+              curvePoints[1].x - 3,
+              curvePoints[1].y,
+              curvePoints[1].z
+            ),
+            title: `Welcome`,
+            subtitle: `Have a seat and enjoy the ride!`,
+          },
+          {
+            cameraRailDist: 1.5,
+            position: new Vector3(
+              curvePoints[2].x + 2,
+              curvePoints[2].y,
+              curvePoints[2].z
+            ),
+            title: "Introduction",
+            subtitle: `\nMy name is Yugyeong(YG) Lee-De Guzman. \n\nI'm a web developer based in San Francisco, California.`
+          },
+          {
+            cameraRailDist: -1,
+            position: new Vector3(
+              curvePoints[3].x - 3,
+              curvePoints[3].y,
+              curvePoints[3].z
+            ),
+            title: "Skills",
+            subtitle: `\nTech - JavaScript, React, HTML, CSS, Storybook.js, Three.js, Figma, Webflow\n\nLanguage - Engish and Korean`
+          },
+          {
+            cameraRailDist: 1.5,
+            position: new Vector3(
+              curvePoints[4].x + 3.5,
+              curvePoints[4].y,
+              curvePoints[4].z - 12
+            ),
+            title: "Experiences",
+            subtitle: `\n Splunk Inc,\n Front-end Engineer\n \n Harmonize,\n Full-Stack Intern\n\n CMECH,\n UI/UX Designer`,
+          },
       ]
       }, [])
 
