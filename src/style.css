@@ -82,7 +82,7 @@ body {
   position: absolute;
   right: 0px;
   top: 0px;
-  margin-right: -69px;
+  margin-right: -52px;
   margin-top: -52px;
   animation: fadeIn 2.4s ease-in-out 1.2s forwards;
   opacity: 0;
@@ -128,7 +128,6 @@ body {
   color: #3535cc;
   border-radius: 32px;
   cursor: pointer;
-  display: inline-block;
   margin-top: 320px;
   display: inline-block;
   position: relative;
@@ -167,7 +166,7 @@ body {
 }
 
 .outro {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -178,6 +177,23 @@ body {
   opacity: 0;
   transition: opacity 4s ease-in-out;
 }
+
+.outro__link{
+  position: fixed;
+  top: 40px;
+  right: 20px;
+
+  padding: 1rem 2rem;
+  text-decoration: none;
+
+  font-family:  "Inter", sans-serif;
+  font-size: 1rem;
+  color: white;  
+
+  cursor: pointer;
+  opacity: 0;
+}
+
 
 .outro--appear {
   opacity: 1;

@@ -32,8 +32,13 @@ export const Overlay = () => {
         </div>
       )}
       <div className={`outro ${end ? "outro--appear" : ""}`}>
-        <p className="outro__text">Wish you had a great flight with me...</p>
+        <p className="outro__text">Wish you had a great flight with me..</p>
+      </div>
+      <div>
+        <a className={`outro__link ${end ? "outro--appear" : ""}`} href="https://stackoverflow.com/questions/3389925/css-positioning-top-and-right">About</a>
       </div>
     </div>
   );
 };
+
+

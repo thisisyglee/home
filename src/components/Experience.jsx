@@ -75,7 +75,7 @@ export const Experience = () => {
               curvePoints[3].z
             ),
             title: "Skills",
-            subtitle: `\nTech - JavaScript, React, HTML, CSS, Storybook.js, Three.js, Figma, Webflow\n\nLanguage - Engish and Korean`
+            subtitle: `\nTech - JavaScript, React, HTML, CSS, Storybook.js, Three.js, Figma, Webflow\n\nLanguage - English and Korean`
           },
           {
             cameraRailDist: 1.5,
@@ -86,6 +86,26 @@ export const Experience = () => {
             ),
             title: "Experiences",
             subtitle: `\n Splunk Inc,\n Front-end Engineer\n \n Harmonize,\n Full-Stack Intern\n\n CMECH,\n UI/UX Designer`,
+          },
+          {
+            cameraRailDist: 1.5,
+            position: new Vector3(
+              curvePoints[5].x - 3.5,
+              curvePoints[5].y ,
+              curvePoints[5].z -6
+            ),
+                        title: "Looking For",
+            subtitle: `\nA frontend development opportunity. Please feel free to contact me! `,
+          },
+          {
+            cameraRailDist: 1.5,
+            position: new Vector3(
+              curvePoints[6].x + 1.5,
+              curvePoints[6].y,
+              curvePoints[6].z + 16
+            ),
+            title: "Connect",
+            subtitle: `\nyugyeonglee93@gmail.com\n\nlinkedin.com/in/yg-lee`,
           },
       ]
       }, [])
@@ -523,23 +543,27 @@ export const Experience = () => {
             <TextSection {...textSections} key={index} />
         ))}
 
-        {/** LINE  */}
+        {/* LINE */}
         <group position-y={-2}>
-            <mesh>
-                <extrudeGeometry
-                    args={[shape, {
-                        steps: LINE_NB_POINTS,
-                        bevelEnabled: false,
-                        extrudePath: curve,
-                    }]} 
-                />
-            </mesh>
-            <meshStandardMaterial 
-              color={'white'} 
+          <mesh>
+            <extrudeGeometry
+              args={[
+                shape,
+                {
+                  steps: LINE_NB_POINTS,
+                  bevelEnabled: false,
+                  extrudePath: curve,
+                },
+              ]}
+            />
+            <meshStandardMaterial
+              color={"white"}
               ref={lineMaterialRef}
-              transparent 
-              envMapIntensity={2} 
-              onBeforeCompile={fadeOnBeforeCompile}/>
+              transparent
+              envMapIntensity={2}
+              onBeforeCompile={fadeOnBeforeCompile}
+            />
+          </mesh>
         </group>
 
       {/* CLOUDS */}
