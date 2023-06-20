@@ -179,20 +179,19 @@ body {
   transition: opacity 4s ease-in-out;
 }
 
-.outro__link{
+.outro__link {
   position: absolute;
   right: 0vw;
   top: 42px;
   padding: 1rem 4rem;
   text-decoration: none;
-  font-family:  "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
-  color: white;  
+  color: white;
 
   cursor: pointer;
   opacity: 0;
 }
-
 
 .outro--appear {
   opacity: 1;
@@ -218,7 +217,7 @@ body {
     transform-origin: center top;
   }
 
-  .outro__link{
+  .outro__link {
     top: 20px;
     font-size: 0.8rem;
     padding: 1rem 2rem;

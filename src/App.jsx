@@ -1,4 +1,4 @@
-import { useMemo } from "react"
+import { useMemo } from "react";
 import { ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { EffectComposer, Noise } from "@react-three/postprocessing";
@@ -9,10 +9,11 @@ import { usePlay } from "./contexts/Play";
 function App() {
   const { play, end } = usePlay();
 
-  const effects = useMemo(() => (        
-      <EffectComposer>
-        <Noise opacity={0.25} />
-      </EffectComposer>))
+  const effects = useMemo(() => (
+    <EffectComposer>
+      <Noise opacity={0.25} />
+    </EffectComposer>
+  ));
   return (
     <>
       <Canvas>
